@@ -58,6 +58,8 @@ p {
   max-width: 600px;
   margin: auto;
   color: rgb(97, 97, 97);
+  font-family: 'adobe-carlson-pro';
+  font-size: 14pt;
 }
 
 hr {
@@ -91,6 +93,13 @@ hr {
   transition-timing-function: ease-in-out;
 }
 
+.coffee {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
 .reveal {
   transform: translateX(0px);
   opacity: 1;
@@ -104,6 +113,18 @@ hr {
 #socialStrip {
   height: 10vh;
   background-color: rgb(221, 195, 21);
+  display: block;
+  justify-content: center;
+}
+
+.socialIcon {
+  width: 40px;
+  transition-duration: 300ms;
+  margin: 10px;
+}
+
+.socialIconInactive {
+  opacity: .6;
 }
 
 #contact {
